@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <title>login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+ <script src="/javascripts/registerpage.js"></script>
+</head>
+<body ng-app='myapp' ng-controller='myctrl'  >
+  <center>
+<div class="container" >
+  <form>
+    <div class="form-group">
+      <label for="email" >Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" ng-model='content.email' required="" style="width: 300px;">
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" ng-model='content.password' required="" style="width: 300px;">
+    </div>
+    <br>
+    <br>
+    
+    <button type="button" class="btn btn-info" ng-click='postdata(content)'>login</button><br/>
+    <a href="/reset" target="_blank">forgot password?</a>
+  </form>
+</div>
+</center>
+</body>
+</html>
+
+  

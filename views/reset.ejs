@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+
+
+  <title>Reset</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  
+ <script src="/javascripts/resetpassword.js"></script>
+
+</head>
+<body  ng-app="myapp2" ng-controller='mycntrl2'>
+  <center>
+<div class="container" >
+  <form>
+    <br/>
+    <div class="form-group">
+      <label for="email" >Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter secondary email" name="email" ng-model='forget.email' required autofocus style="width: 300px;">
+    </div>
+    <br>
+  
+    <button type="button" class="btn btn-info" ng-show='otp' ng-click='checkuser(forget)' >Get OTP</button><br><br>
+    
+      <label for="pwd" ng-show='hide'>Enter OTP</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter OTP" name="password"  ng-model='forget.otp' ng-show='hide' style="width: 300px;">
+    
+    <br>
+  
+    <button type="button" class="btn btn-info"   ng-show='hide1' ng-click='checkotp(forget)'>Verify</button><br><br>
+
+    <input type="text" placeholder="Enter Password"  ng-show='pass' ng-model='forget.password' required><br/><br>
+      <input type="text" placeholder="Repeat Password"  ng-show='pass' ng-model='forget.cpwd' required><br/><br>
+      <button type="button" class="btn btn-info"   ng-show='pass' ng-click='changepass(forget)'>update</button><br>
+
+  </form>
+</div>
+</center>
+</body>
+</html>
+
+  

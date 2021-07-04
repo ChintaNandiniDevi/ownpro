@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+  <script src="/javascripts/regdetails.js"></script>
+  <link rel="icon" type="png" href="/images/fb.png">
+</head>
+
+<body ng-app='myapp' ng-controller='myctrl'>
+  <center>
+
+<div class="division">
+
+  <h3 style="font-style:bold; font-size:60px;color: blue;"><img src="/images/fb.png" height="55px" width="55px">acebook</h3>
+  <hr >
+  <form >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Type Your name" ng-model='content.fname' autocomplete="off">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Type Your last name" ng-model='content.lname' autocomplete="off">
+    <br>
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" ng-model='content.email' autocomplete="off">
+    <br>
+    <br>
+
+    <label for="phno">phone no</label>
+    <input type="number" id="phno" name="email" placeholder="+91" ng-model='content.phno' autocomplete="off">
+    <br>
+    <br>
+
+    <label for="dob">Date of Birth</label>
+    <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" ng-model='content.dob' autocomplete="off">
+    <br>
+    <br>
+    <label for="country">Gender</label>
+    <select id="country" name="country" ng-model='content.gender'>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="others">others</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" ng-model='content.country'>
+      <option value="India">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <br>
+    <br>
+
+    <button type="button"  class="btn btn-success" ng-click='postee(content)' style="font-size: 25px;">signup</button>
+  </form>
+</div>
+</center>
+</body>
+</html>

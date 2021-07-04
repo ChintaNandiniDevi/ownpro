@@ -1,0 +1,25 @@
+body {
+	background-color: blue;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+label{
+	color: blue;
+}
+
+
+ 
+ input{
+ 	width: 200px;
+ 	height: 40px;
+ 	border-radius: 10px;
+ }
+ 
+ .division{
+ 	background-color:white; width: 100%; height: 600px;
+ 	border-radius: 10px; 
+ }
